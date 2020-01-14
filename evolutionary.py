@@ -42,7 +42,7 @@ def ed_rand_1_bin(np, max_gen, f, cr, execution):
         generation = pd.DataFrame({'x1': population[:, 0], 'x2': population[:, 1], 'f(x1,x2)': aptitudes})
         generation['gen'] = g + 1
         EVOLUTION = pd.concat([EVOLUTION, generation], ignore_index=True)
-    EVOLUTION.to_csv('./datasources/execution_' + str(execution) + '.csv') 
+    EVOLUTION.to_csv('./datasources/execution_' + str(execution + 1) + '.csv') 
 
 if __name__ == "__main__":
     for i in range (30):

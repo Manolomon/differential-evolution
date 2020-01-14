@@ -11,9 +11,6 @@ datasources/
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
 
-# Remove Notebook to keep it on a .py file
-*.ipynb
-
 # IPython
 profile_default/
 ipython_config.py
